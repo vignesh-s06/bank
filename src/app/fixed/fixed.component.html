@@ -1,0 +1,50 @@
+<div class="text mt-5">
+    <h3 style="margin-left: 275px;">FIXED DEPOSIT CALCULATOR</h3>
+  </div>
+  <div class="container text-center mt-5 ">
+    <div class="row">
+      <div class="col-6  fixed-align">
+        <form class="form-control form-align">
+          <div class = "shadow">
+            <label>Principle amount</label> <br>
+          <input type="text" class="form-inline" #amount />
+          </div>
+          <div class = "shadow">
+          <label>Number of years</label><br>
+          <input type="text" class="form-inline" #years />
+          </div>
+          <div class = "shadow">
+          <label>Rate of interest</label><br>
+          <input
+            type="text"
+            value="{{ typeOfRate }}"
+            class="form-inline"
+            #interest
+          /> <br>
+          <select (change)="typeRate(rate.value)" #rate>
+            <option value="">Type of people</option>
+            <option value="7">Senior Citizen</option>
+            <option value="6.5">Below the age of 60</option></select
+          >
+        </div>
+        <div class = "shadow">
+          <label>Maturity amount</label><br>
+          <input type="text" value="{{ maturityAmount }}" class="form-inline" />
+        </div>
+          <div class="button-align btn-success shadow">
+            <input
+              type="button"
+              value="Calculate"
+              class="form-inline btn-success"
+              (click)="calculateAll(amount.value, years.value)"
+            />
+            <input type="reset" value="Reset" class="form-inline" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+
+  

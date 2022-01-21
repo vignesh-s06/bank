@@ -1,0 +1,57 @@
+<div class="container text-center mt-3">
+    <div class="row">
+      <div class="col-6">
+        <form class="form-control form-align">
+          <div>
+            <label>Name</label> <br />
+            <input type="text" class="form-inline" placeholder="Enter name" #name />
+          </div>
+          <div>
+          <label>Phone number</label><br>
+          <input type="text" class="form-inline"  placeholder="Enter Mobile Number" #phone />
+        </div>
+        <div>
+          <label>Account Number</label><br>
+          <input
+            type="text"
+            class="form-inline"
+            placeholder="Enter Acc No"
+            #acc
+          /> <br>
+        </div>
+        <div>
+          <label>UPI ID</label><br>
+          <input
+            type="text"
+            class="form-inline"
+            placeholder="UPIid@ybl"
+            #upi
+          /> <br>
+        </div>
+          <div>
+          <label>Initial Balance</label><br /><input
+            class="form-inline"
+            type="text"
+            placeholder="Initial Balance"
+            #initial
+          />
+        </div>
+        <div>
+          <label>Reamaining balance</label><br>
+          <input type="text" class="form-inline"  placeholder="Remaining Balance" #remaining/>
+        </div>
+          <div class="button-align mt-3">
+            <input
+              type="button"
+              value="Create"
+              class="form-inline p-2" (click) = create(name.value,phone.value,acc.value,upi.value,initial.value,remaining.value)
+            />
+            <input type="reset" value="Reset" class="form-inline button-reset p-2" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+

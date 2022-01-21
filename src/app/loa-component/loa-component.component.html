@@ -1,0 +1,55 @@
+  <div class="container text-center mt-3 me-auto ms-auto">
+    <div class="text mt-5">
+        <h3 style="margin-left: 275px;">LOAN CALCULATOR</h3>
+      </div>
+    <div class="row">
+      <div class="col-6">
+        <form class="form-control form-align">
+          <div class = "shadow">
+            <label>Principle amount</label> <br />
+            <input type="text" class="form-inline" #amount />
+          </div>
+          <div class = "shadow">
+          <label>Number of years</label><br>
+          <input type="text" class="form-inline" #years />
+        </div>
+        <div class = "shadow">
+          <label>Rate of interest</label><br>
+          <input
+            type="text"
+            value="{{ typeOfRate }}"
+            class="form-inline"
+            #interest
+          /> <br>
+          <select (change)="typeRate(rate.value)" #rate>
+            <option value="">Type of loan</option>
+            <option value="6">Car loan</option>
+            <option value="8">House loan</option>
+            <option value="10">Personal loan</option>
+          </select>
+        </div>
+          <br />
+          <div class = "shadow">
+          <label>E M I</label><br /><input
+            class="form-inline"
+            type="text"
+            value="{{ emi }}"
+          />
+        </div>
+        <div class = "shadow">
+          <label>Total amount payable</label><br>
+          <input type="text" value="{{ totalAmount }}" class="form-inline" />
+        </div>
+          <div class="button-align shadow btn-success">
+            <input
+              type="button"
+              value="Calculate"
+              class="form-inline btn-success"
+              (click)="calculateAll(amount.value, years.value)"
+            />
+            <input type="reset" value="Reset" class="form-inline" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

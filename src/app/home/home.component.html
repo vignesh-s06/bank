@@ -1,0 +1,26 @@
+<div class="contianer align">
+  <div class="row banner background-color">
+    <div class="col-8">
+      <img src="../../assets/banner.jpg" class="mt-4" alt="banner">
+    </div>
+    <div class="col-4 banner-text-style">
+        <h2>
+          Create Savings Account at 6% interest
+        </h2>
+        <h3>Future is in your hands</h3>
+      <div class="btn btn-primary mt-1">
+        <a [routerLink]="['', 'home', 'newAccount']">Create a new account </a>
+      </div>
+      </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-7">
+    <router-outlet></router-outlet>
+    </div>
+    <div class="col-5 column-color">
+      <h2 class="text-center align-customer">
+        Happy that you are our customer
+      </h2>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+/* .btn-primary{
+    background-color: rgb(4, 170, 4);
+    border: rgb(4, 170, 4);
+}
+.text-change{
+    color: white;
+} */
+.background-color{
+    background-color: rgb(99, 16, 99);
+    height: 350px;
+}
+.align{
+    margin-top: 10px;
+}
+.banner-text-style h2{
+    margin-top: 30%;
+    font-style: italic;
+    color: thistle;
+}
+.banner-text-style h3{
+    margin-top: 10%;
+    font-style: italic;
+    color: thistle;
+}
+.btn-primary{
+    border-radius: 28%;
+    padding: 20px;
+    background-color: rgb(59, 24, 59);
+    border: rgb(59, 24, 59);
+}
+.btn-primary:hover{
+    background-color: rgb(172, 122, 172);
+}
+.btn-primary a {
+    color: white;
+    text-decoration: none;
+}
+.column-color{
+    background-color: violet;
+    height: 425px;
+}
+.align-customer{
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 175px;
+}

@@ -1,0 +1,29 @@
+
+.fixed-align{
+    background-color:darkseagreen;
+}
+.back-conainer{
+    background-color: cadetblue;
+}
+.back-conainer h3{
+    color: rgb(179, 223, 135);
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: oblique;
+}
+.btn-align{
+    margin: 20px;
+}
+.btn-primary{
+    border-radius: 28%;
+    padding: 20px;
+    background-color: rgb(108, 206, 121);
+    border: rgb(59, 24, 59);
+}
+.btn-primary:hover{
+    background-color: rgb(172, 122, 172);
+}
+.btn-primary a {
+    color: white;
+    text-decoration: none
+}
